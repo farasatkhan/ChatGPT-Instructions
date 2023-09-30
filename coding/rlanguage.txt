@@ -1,0 +1,150 @@
+You're an experienced R Language developer named Joe, assisting fellow developers in optimizing their code, coding practices. As a dedicated R language developer, your solutions emphasize the following principles:
+
+1. Adherence to DRY principles.
+2. Crafting code that prioritizes simplicity, performance, and readability.
+3. Thoroughly typed code that successfully passes Prettier tests.
+4. In cases of iterative changes, focus on revising only the changing parts and their relevant context, avoiding unnecessary rewrites.
+
+**How would you like ChatGPT to respond?**
+
+Just give me the code without any explanation on how it works. Bias towards the most efficient solution. Output any code inside a markdown code block with a language specification.
+
+
+
+A garment factory produces shirts and pants for Kmart chain. The contract is such that
+quality control is done before shipping and all products supplied to Kmart satisfying the
+quality requirements would be accepted by the chain. The factory employs 20 workers
+in the cutting department, 50 workers in the sewing department, and 14 workers in the
+packaging department. The garment factory works 8 productive hours a day (no idle
+time during these 8 hours). There is a daily demand for at most 180 shirts. The demand
+for pants is unlimited. Each worker can participate only in one activity- the activity to
+which they are assigned. The table below gives the time requirements (in minutes) and
+profit per unit for the two garments.
+
+Amount (minutes) per operation for Cutting, Sewing, and Packaging.
+Shirts:-
+Cutting: 40 
+Sewing: 40 
+Packaging: 20 
+Profit per unit($): 10
+
+Pants:-
+Cutting: 20 
+Sewing: 100 
+Packaging: 20 
+Profit per unit($): 8
+
+c) Use the graphical method to find the optimal solution. Show the feasible region and
+the optimal solution on the graph. Annotate all lines on your graph. What is the optimal
+daily profit for the factory?
+
+Note: make sure that your graph is clear, all variables involved are clearly represented and annotated, and each line is clearly marked and related to the corresponding equation.
+
+d) Find the range for the profit ($) per shirt (if any) that can be obtained without affecting the optimal point of part (c).
+
+
+
+2. A factory makes three products called Bloom, Amber, and Leaf, from three materials
+containing Cotton, Wool and Nylon. The following table provides details on the sales
+price, production cost and purchase cost per ton of products and materials respectively.
+
+Bloom:-
+Sales price: $60 
+Production cost: $5 
+Purchase price: Cotton $40
+
+Amber:-
+Sales price: $55 
+Production cost: $4 
+Purchase price: Wool $45
+
+Leaf:-
+Sales price: $60 
+Production cost: $5 
+Purchase price: Nylon $30
+
+The maximal demand (in tons) for each product, the minimum cotton and wool proportion in each product are as follows:
+
+Bloom:-
+Demand: 4200 tons
+min Cotton proportion: 50% 
+min Wool proportion: 40%
+
+Amber:-
+Demand: 3200 tons
+min Cotton proportion: 60% 
+min Wool proportion: 40%
+
+Leaf:-
+Demand: 3500 tons
+min Cotton proportion: 50% 
+min Wool proportion: 30%
+
+b) Solve the model using R/R Studio. Find the optimal profit and optimal values of the
+decision variables.
+
+Hints:
+1. Let xij ≥ 0 be a decision variable that denotes the number of tons of products j for
+j ∈ {1 = Bloom, 2 = Amber, 3 = Leaf} to be produced from Materials i ∈ {C=Cotton,
+W=Wool, N=Nylon}.
+
+2. The proportion of a particular type of Material in a particular type of Product can be
+calculated as: e.g., the proportion of Cotton in product Bloom is given by:
+
+xC1 / (xC1 + xW1 + xN1)
+
+a) Formulate an LP model for the factory that maximises the profit, while satisfying the
+demand and the cotton and wool proportion constraints.
+
+
+
+
+
+
+Two construction companies, Giant and Sky, bid for the right to build in a field. The
+possible bids are $ 10 Million, $ 20 Million, $ 30 Million, $ 35 Million and $ 40 Million.
+The winner is the company with the higher bid. The two companies decide that in the case of a tie (equal bids), Giant is the winner and
+will get the field. Giant has ordered a survey and, based on the report from the survey, concludes that
+getting the field for more than $ 35 Million is as bad as not getting it (assume loss), except in case of a tie (assume win). Sky is not aware of this survey
+
+(d) Construct a linear programming model for Company Sky in this game.
+(e) Produce an appropriate code to solve the linear programming model for Company Sky in this game.
+
+(f) Solve the game for Sky using the linear programming model and the code you constructed in parts (d) and (e). Interpret your solution.
+
+Solve only part f.
+
+
+
+Jason plans to go on a steady diet and decided to restrict his daily potatoes and lamb (meat) intake. He wants to satisfy the daily nutritional requirements at a minimum cost.
+
+Nutrient contents (in grams) per serving of potatoes is as follows:
+
+0.4g Potassium,
+17g Carbohydrates,
+2g protein,
+1g Fat,
+
+Nutrient contents (in grams) per serving of lamb (meat) is as follows:
+
+0.3g Potassium,
+1g Carbohydrates,
+25g protein,
+21g Fat
+
+One serving of potatoes costs $3.00  and one serving of Lamb costs $9.00.
+
+The daily nutritional requirement (in grams) is as follows:
+Potassium  <= 12g
+Carbohydrates >= 100g
+protein  >= 40g
+Fat    <= 80g
+
+Derive a Linear Programming model and solve the problem using the graphical method or any online or commercial solvers to help Jason to decide the daily servings (can be in fractions/decimals) of potatoes and lamb intake required that satisfies the nutritional requirements at a minimum cost. (Give the answers rounded off to 2 decimal places only)
+
+
+Answer the following questions:
+
+Servings of potatoes:
+ Servings of lamb:
+ Total (optimal) cost:
